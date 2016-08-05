@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Batman vs Superman</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Imagen de fondo dinamica</title>
+</head>
+<body id="demo">
+		<div>
+			<p><%= flash[:notice]%></p>
+			<form action="<%= pages_save_form_path %>" method="POST">
+				<%= hidden_field_tag :authenticity_token, 
+					form_authenticity_token %>
+			    <input name="q" placeholder="Superheroe">
+			    <br>
+			    <input name="r" placeholder="E-mail">
+			    <input type="submit" value="enviar">
+			</form>
+		</div>
+		<div>
+			<li><%= link_to "Batman", pages_superman_path %></li>
+			<img class="batmanCss" src="<%= asset_path 'batman.jpg' %>">
+		</div>
+		<div>
+			<li><%= link_to "Superman", pages_superman_path %></li>
+			<img class="supermanCss" src="<%= asset_path 'superman.jpg' %>">
+		</div>
+</body>
+</html>
