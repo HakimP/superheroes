@@ -14,5 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require 'jquery.backstretch'
 
-$("#demo").backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
+$("#idBatman").backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
+$("#idSuperman").backstretch("http://static.srcdn.com/wp-content/uploads/Superman-3D-Art.jpg");
