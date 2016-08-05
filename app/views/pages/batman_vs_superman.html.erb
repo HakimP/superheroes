@@ -8,6 +8,17 @@
 </head>
 <body id="demo">
 		<div>
+			<p><%= flash[:notice]%></p>
+			<form action="<%= pages_save_form_path %>" method="POST">
+				<%= hidden_field_tag :authenticity_token, 
+					form_authenticity_token %>
+			    <input name="q" placeholder="Superheroe">
+			    <br>
+			    <input name="r" placeholder="E-mail">
+			    <input type="submit" value="enviar">
+			</form>
+		</div>
+		<div>
 			<li><%= link_to "Batman", pages_superman_path %></li>
 			<img class="batmanCss" src="<%= asset_path 'batman.jpg' %>">
 		</div>
