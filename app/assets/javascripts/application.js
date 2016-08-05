@@ -12,9 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap-sprockets
-//= require 'jquery.backstretch'
-
-$("#idBatman").backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
-$("#idSuperman").backstretch("http://static.srcdn.com/wp-content/uploads/Superman-3D-Art.jpg");
+//= require jquery.backstretch

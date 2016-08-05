@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Batman vs Superman</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Imagen de fondo dinamica</title>
+</head>
+<body id="demo">
+		<div>
+			<li><%= link_to "Batman", pages_superman_path %></li>
+			<img class="batmanCss" src="<%= asset_path 'batman.jpg' %>">
+		</div>
+		<div>
+			<li><%= link_to "Superman", pages_superman_path %></li>
+			<img class="supermanCss" src="<%= asset_path 'superman.jpg' %>">
+		</div>
+</body>
+</html>
