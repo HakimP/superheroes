@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap-sprockets
+
+$("#demo").backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
